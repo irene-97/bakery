@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya:400,400i,500,500i,700,700i&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&subset=cyrillic");
+
+@font-face {
+	src: url("../fonts/Scriptina.woff") format("woff");
+	font-family: "Scriptina";
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/Scriptina-Alternates.woff") format("woff");
+	font-family: "Scriptina Alternates";
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/ProximaNova-Regular.woff") format("woff");
+	font-family: "Proxima Nova";
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/ProximaNova-RegularIt.woff") format("woff");
+	font-family: "Proxima Nova";
+	font-weight: 400;
+	font-style: italic;
+}
