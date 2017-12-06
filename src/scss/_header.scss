@@ -1,0 +1,69 @@
+.header {
+	height: 70px;
+	background: rgba($color-black, 0.5);
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		a {
+			display: block;
+			padding: 18px 0 28px;
+			font-family: $font-family-scriptina;
+			font-size: 30px;
+			line-height: 24px;
+			letter-spacing: 8px;
+			text-decoration: none;
+			color: $color-white;
+		}
+	}
+
+	&__menu {
+		padding: 23px 0;
+
+		&__item {
+			position: relative;
+			margin: 0 28px;
+			padding: 0 10px;
+			font-family: $font-family-alegreya;
+			font-size: 14px;
+			line-height: 24px;
+			letter-spacing: 4.4px;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $color-white;
+
+			&::before {
+				content: "~";
+				position: absolute;
+				left: -47px;
+				top: -3px;
+				margin: 0 10px;
+				color: $color-white;
+			}
+
+			&:first-child {
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__socials {
+		display: flex;
+		padding: 15px 0 8px;
+
+		&__link {
+			margin: 0 2px;
+			padding: 10px 8px;
+
+			svg {
+				width: 17px;
+				height: 19px;
+			}
+		}
+	}
+}
