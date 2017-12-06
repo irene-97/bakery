@@ -1,0 +1,65 @@
+.banner {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -70px;
+	border-bottom: solid 10px $color-white;
+	height: 910px;
+	background: url("../images/banner.png") center no-repeat;
+	background-size: cover;
+
+	&__content {
+		padding: 20px;
+		text-align: center;
+
+		&__title {
+			font-family: $font-family-playfair-display;
+			font-size: 92px;
+			color: $color-white;
+		}
+
+		svg {
+			margin: 50px 0;
+			width: 193px;
+			height: 15px;
+		}
+
+		&__text {
+			font-size: 24px;
+			line-height: 35px;
+			color: $color-white;
+		}
+
+		&__button {
+			display: inline-block;
+			margin-top: 30px;
+			padding: 10px 50px;
+			font-family: $font-family-alegreya;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 24px;
+			letter-spacing: 3.5px;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $color-white;
+			background: rgba($color-black, 0.5);
+			transition: background 0.1s ease;
+
+			&:hover {
+				background: rgba($color-black, 0.7);
+			}
+		}
+	}
+
+	&__label {
+		position: absolute;
+		left: 50%;
+		bottom: -58px;
+		width: 106px;
+		height: 106px;
+		background: url("../images/label-banner.png") center no-repeat;
+		background-size: contain;
+		transform: translateX(-50%);
+	}
+}
