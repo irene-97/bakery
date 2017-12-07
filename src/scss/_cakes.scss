@@ -1,0 +1,172 @@
+.cakes {
+	background: url("../images/cake-bg.jpg") center no-repeat;
+	background-size: cover;
+
+	.container {
+		display: flex;
+	}
+
+	.col-1 {
+		flex-basis: 50%;
+		padding: 98px 70px 0;
+		text-align: center;
+	}
+
+	.col-2 {
+		flex-basis: 50%;
+	}
+
+	&__title {
+		font-family: $font-family-alegreya;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 30px;
+		letter-spacing: 1px;
+		color: $color-fuscous-gray;
+	}
+
+	&__subtitle {
+		margin: 13px 0;
+		font-family: $font-family-alegreya;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 30px;
+		letter-spacing: 1.4px;
+		text-transform: uppercase;
+		color: $color-barley-corn;
+	}
+
+	&__text {
+		margin: 53px 0 34px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.5px;
+		color: $color-fuscous-gray;
+	}
+
+	&__status {
+		font-family: $font-family-alegreya;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 30px;
+		color: $color-fuscous-gray;
+	}
+
+	&__cooker {
+		display: flex;
+		justify-content: center;
+		margin-top: 61px;
+
+		&__name,
+		&__surname {
+			border-top: solid 1px $color-fuscous-gray;
+			border-bottom: solid 1px $color-fuscous-gray;
+			padding: 18px 13px 0;
+			height: 60px;
+			font-family: $font-family-alegreya;
+			font-size: 24px;
+			line-height: 25px;
+			color: $color-fuscous-gray;
+		}
+
+		&__photo {
+			margin: -22px 19px 0;
+			border: solid 5px $color-white;
+
+			img {
+				border-radius: 50%;
+				width: 100px;
+				height: 100px;
+			}
+		}
+
+		&__surname {
+		}
+	}
+
+	&__quote {
+		position: relative;
+		margin: 27px auto 25px;
+		width: 250px;
+		font-family: $font-family-scriptina;
+		font-size: 24px;
+		line-height: 30px;
+		color: $color-barley-corn;
+
+		&::before,
+		&::after {
+			position: absolute;
+			display: block;
+			font-size: 90px;
+			line-height: 90px;
+		}
+
+		&::before {
+			content: "“";
+			left: -78px;
+			top: -56px;
+		}
+
+		&::after {
+			content: "”";
+			right: -78px;
+			bottom: -57px;
+		}
+	}
+
+	&__banner {
+		position: relative;
+		margin: 110px 0 100px;
+		padding-left: 6px;
+
+		&__image {
+			position: relative;
+			display: inline-block;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			width: 295px;
+			height: 250px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				display: block;
+				border: solid 5px $color-white;
+				width: 278px;
+				height: 233px;
+				transform: translate(-50%, -50%);
+			}
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+
+		&__label {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 279px;
+			height: 279px;
+			text-align: center;
+			background: url("../images/cake-label.png") center no-repeat;
+			background-size: contain;
+			transform: translate(-50%, -50%);
+
+			&__text {
+				position: absolute;
+				left: 50%;
+				top: 95px;
+				font-family: $font-family-alegreya;
+				font-size: 30px;
+				line-height: 34px;
+				text-transform: uppercase;
+				color: $color-laser;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
