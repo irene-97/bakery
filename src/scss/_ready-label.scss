@@ -32,4 +32,20 @@
 		line-height: 30px;
 		color: $color-natural-gray;
 	}
+
+	&--opacity {
+		background: rgba($color-white, 0.8);
+
+		.ready-label__title {
+			margin-top: 13px;
+			margin-bottom: 17px;
+		}
+
+		.ready-label__value {
+			margin-bottom: 14px;
+			font-size: 60px;
+			line-height: 30px;
+			color: $color-fuscous-gray;
+		}
+	}
 }
