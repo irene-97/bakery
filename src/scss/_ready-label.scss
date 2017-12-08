@@ -1,0 +1,35 @@
+.ready-label {
+	padding: 26px 15px;
+	width: 200px;
+	height: 200px;
+	box-shadow: 0 25px 54px rgba($color-natural-gray, 0.45);
+	text-align: center;
+	background: url("../images/ready-label-bg.jpg") bottom no-repeat;
+	background-size: cover;
+
+	&__title {
+		font-family: $font-family-alegreya;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 30px;
+		text-transform: uppercase;
+		color: $color-barley-corn;
+	}
+
+	&__value {
+		font-family: $font-family-alegreya;
+		font-weight: 600;
+		font-size: 92px;
+		line-height: 92px;
+		text-transform: uppercase;
+		color: $color-calico;
+	}
+
+	&__unit {
+		font-family: $font-family-alegreya;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 30px;
+		color: $color-natural-gray;
+	}
+}

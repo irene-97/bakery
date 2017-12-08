@@ -1,4 +1,85 @@
-$sprites: ();
+$sprites: (
+	"arrow-left": (
+		normal: (
+			x: 0,
+			y: 0,
+			width: 32,
+			height: 32,
+			image: "sprites.png",
+			total_width: 66,
+			total_height: 54,
+		),
+		retina: (
+			x: 0,
+			y: 0,
+			width: 64,
+			height: 64,
+			image: "sprites@2x.png",
+			total_width: 132,
+			total_height: 108,
+		),
+	),
+	"arrow-right": (
+		normal: (
+			x: 34,
+			y: 0,
+			width: 32,
+			height: 32,
+			image: "sprites.png",
+			total_width: 66,
+			total_height: 54,
+		),
+		retina: (
+			x: 68,
+			y: 0,
+			width: 64,
+			height: 64,
+			image: "sprites@2x.png",
+			total_width: 132,
+			total_height: 108,
+		),
+	),
+	"star-empty": (
+		normal: (
+			x: 0,
+			y: 34,
+			width: 21,
+			height: 20,
+			image: "sprites.png",
+			total_width: 66,
+			total_height: 54,
+		),
+		retina: (
+			x: 0,
+			y: 68,
+			width: 42,
+			height: 40,
+			image: "sprites@2x.png",
+			total_width: 132,
+			total_height: 108,
+		),
+	),
+	"star-full": (
+		normal: (
+			x: 23,
+			y: 34,
+			width: 21,
+			height: 20,
+			image: "sprites.png",
+			total_width: 66,
+			total_height: 54,
+		),
+		retina: (
+			x: 46,
+			y: 68,
+			width: 42,
+			height: 40,
+			image: "sprites@2x.png",
+			total_width: 132,
+			total_height: 108,
+		),
+	),
+);
 
 @each $name in map-keys($sprites) {
 	.sprite-#{$name} {

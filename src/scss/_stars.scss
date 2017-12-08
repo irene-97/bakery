@@ -1,0 +1,15 @@
+.stars {
+	width: 21px;
+
+	&__star {
+		margin: 5px 0;
+
+		&--full {
+			@include sprite("star-full");
+		}
+
+		&--empty {
+			@include sprite("star-empty");
+		}
+	}
+}
