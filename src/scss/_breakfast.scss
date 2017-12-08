@@ -1,0 +1,118 @@
+.breakfast {
+	padding-top: 84px;
+	height: 760px;
+	background: url("../images/breakfast-bg.png") center no-repeat;
+	background-size: cover;
+
+	.container {
+		display: flex;
+		text-align: center;
+	}
+
+	.col-1 {
+		flex-basis: 50%;
+	}
+
+	.col-2 {
+		flex-basis: 50%;
+		margin-top: -9px;
+		padding-left: 186px;
+	}
+
+	&__title {
+		font-family: $font-family-alegreya;
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 60px;
+		letter-spacing: 2.2px;
+		color: $color-white;
+	}
+
+	&__text {
+		font-family: $font-family-alegreya;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 30px;
+		text-transform: uppercase;
+		color: $color-rodeo-dust;
+	}
+
+	&__list {
+		margin-top: 56px;
+
+		&__item {
+			margin-bottom: 47px;
+
+			&__name {
+				font-family: $font-family-alegreya;
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 30px;
+				color: $color-white;
+			}
+
+			&__description {
+				margin-top: 4px;
+				font-size: 16px;
+				line-height: 30px;
+				color: $color-cotton-seed;
+			}
+
+			&__price {
+				margin-top: 16px;
+				font-family: $font-family-alegreya;
+				font-size: 36px;
+				line-height: 30px;
+				color: $color-calico;
+			}
+		}
+	}
+
+	&__sheet {
+		position: relative;
+		width: 442px;
+
+		&__text {
+			position: absolute;
+			left: 0;
+			top: 215px;
+			padding: 0 50px;
+			text-align: center;
+
+			&__title {
+				margin-bottom: 30px;
+				font-family: $font-family-alegreya;
+				font-weight: 700;
+				font-size: 41px;
+				line-height: 60px;
+				letter-spacing: 2px;
+				color: $color-fuscous-gray;
+			}
+
+			&__description {
+				font-size: 14px;
+				line-height: 30px;
+				color: $color-fuscous-gray;
+			}
+
+			&__more {
+				display: inline-block;
+				margin-top: 42px;
+				border: solid 1px $color-dawn;
+				padding: 10px 71px;
+				font-family: $font-family-alegreya;
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 30px;
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $color-barley-corn;
+				transition: bachground 0.2s ease;
+
+				&:hover {
+					background-color: rgba($color-white, 0.3);
+				}
+			}
+		}
+	}
+}
