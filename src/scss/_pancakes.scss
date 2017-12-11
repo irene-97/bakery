@@ -35,6 +35,7 @@
 			}
 
 			&__info {
+				position: relative;
 				padding-left: 62px;
 				width: 546px;
 				font-family: $font-family-alegreya;
@@ -62,12 +63,12 @@
 					font-size: 14px;
 					line-height: 24px;
 				}
-			}
 
-			.ready-label {
-				position: absolute;
-				right: 98px;
-				top: -44px;
+				.ready-label {
+					position: absolute;
+					right: -80px;
+					top: -44px;
+				}
 			}
 		}
 	}
