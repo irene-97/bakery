@@ -8,6 +8,15 @@ $('.small-slider').slick({
 	slidesToShow: 3,
 	slidesToScroll: 1,
 	asNavFor: '.big-slider',
+	responsive: [
+		{
+			breakpoint: 500,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			},
+		},
+	],
 });
 
 $('.big-slider').slick({

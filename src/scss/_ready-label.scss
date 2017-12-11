@@ -14,6 +14,11 @@
 		line-height: 30px;
 		text-transform: uppercase;
 		color: $color-barley-corn;
+
+		@media (max-width: 540px) {
+			font-size: 15px;
+			line-height: 28px;
+		}
 	}
 
 	&__value {
@@ -23,6 +28,11 @@
 		line-height: 92px;
 		text-transform: uppercase;
 		color: $color-calico;
+
+		@media (max-width: 540px) {
+			font-size: 75px;
+			line-height: 75px;
+		}
 	}
 
 	&__unit {
@@ -31,6 +41,11 @@
 		font-size: 18px;
 		line-height: 30px;
 		color: $color-natural-gray;
+
+		@media (max-width: 540px) {
+			font-size: 15px;
+			line-height: 28px;
+		}
 	}
 
 	&--opacity {
@@ -47,5 +62,12 @@
 			line-height: 30px;
 			color: $color-fuscous-gray;
 		}
+	}
+	
+	@media (max-width: 540px) {
+		padding: 12px 15px;
+		width: 150px;
+		height: 150px;
+		box-shadow: 0 5px 20px rgba($color-natural-gray, 0.45);
 	}
 }
