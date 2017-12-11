@@ -1,5 +1,6 @@
 .breakfast {
 	padding-top: 84px;
+	padding-bottom: 30px;
 	height: 760px;
 	background: url("../images/breakfast-bg.png") center no-repeat;
 	background-size: cover;
@@ -7,6 +8,10 @@
 	.container {
 		display: flex;
 		text-align: center;
+
+		@media (max-width: 780px) {
+			flex-direction: column;
+		}
 	}
 
 	.col-1 {
@@ -17,6 +22,14 @@
 		flex-basis: 50%;
 		margin-top: -9px;
 		padding-left: 186px;
+
+		@media (max-width: 1330px) {
+			padding-left: 116px;
+		}
+
+		@media (max-width: 1024px) {
+			padding-left: 0;
+		}
 	}
 
 	&__title {
@@ -70,7 +83,17 @@
 
 	&__sheet {
 		position: relative;
-		width: 442px;
+		width: 434px;
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+
+			@media (max-width: 470px) {
+				display: none;
+			}
+		}
 
 		&__text {
 			position: absolute;
@@ -87,12 +110,22 @@
 				line-height: 60px;
 				letter-spacing: 2px;
 				color: $color-fuscous-gray;
+
+				@media (max-width: 480px) {
+					font-size: 30px;
+					line-height: 40px;
+				}
 			}
 
 			&__description {
 				font-size: 14px;
 				line-height: 30px;
 				color: $color-fuscous-gray;
+
+				@media (max-width: 480px) {
+					font-size: 12px;
+					line-height: 25px;
+				}
 			}
 
 			&__more {
@@ -113,6 +146,24 @@
 					background-color: rgba($color-white, 0.3);
 				}
 			}
+
+			@media (max-width: 470px) {
+				position: static;
+				padding: 10px;
+				background-color: $color-spring-wood;
+			}
 		}
+
+		@media (max-width: 780px) {
+			margin: 0 auto;
+		}
+
+		@media (max-width: 480px) {
+			width: auto;
+		}
+	}
+
+	@media (max-width: 780px) {
+		height: auto;
 	}
 }
