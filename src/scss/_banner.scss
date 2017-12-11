@@ -17,18 +17,34 @@
 			font-family: $font-family-playfair-display;
 			font-size: 92px;
 			color: $color-white;
+
+			@media (max-width: 740px) {
+				font-size: 63px;
+			}
+
+			@media (max-width: 640px) {
+				font-size: 53px;
+			}
 		}
 
 		svg {
 			margin: 50px 0;
 			width: 193px;
 			height: 15px;
+
+			@media (max-width: 990px) {
+				margin: 20px 0;
+			}
 		}
 
 		&__text {
 			font-size: 24px;
 			line-height: 35px;
 			color: $color-white;
+
+			@media (max-width: 640px) {
+				font-size: 20px;
+			}
 		}
 
 		&__button {
@@ -61,5 +77,17 @@
 		background: url("../images/label-banner.png") center no-repeat;
 		background-size: contain;
 		transform: translateX(-50%);
+	}
+
+	@media (max-width: 1024px) {
+		height: 630px;
+	}
+
+	@media (max-width: 990px) {
+		margin-top: 0;
+	}
+
+	@media (max-width: 640px) {
+		height: 555px;
 	}
 }
