@@ -6,15 +6,25 @@
 	.container {
 		display: flex;
 		justify-content: space-between;
+
+		@media (max-width: 995px) {
+			flex-direction: column;
+			padding: 0 20%;
+			text-align: center;
+		}
+
+		@media (max-width: 700px) {
+			padding: 0 10%;
+		}
 	}
 
 	&__menu {
 		border-top: solid 1px $color-cotton-seed;
 		border-bottom: solid 1px $color-cotton-seed;
-		padding-top: 25px;
 
 		&__item {
 			position: relative;
+			display: inline-block;
 			margin: 0 28px;
 			padding: 22px 10px;
 			font-family: $font-family-alegreya;
@@ -32,12 +42,24 @@
 				top: 18px;
 				margin: 0 10px;
 				color: $color-fuscous-gray;
+
+				@media (max-width: 1210px) {
+					left: -26px;
+				}
+
+				@media (max-width: 700px) {
+					display: none;
+				}
 			}
 
 			&:first-child {
 				&::before {
 					display: none;
 				}
+			}
+
+			@media (max-width: 1210px) {
+				margin: 0 10px;
 			}
 		}
 	}
