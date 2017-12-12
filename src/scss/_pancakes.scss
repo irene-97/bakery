@@ -67,6 +67,10 @@
 				&__title {
 					margin-top: 65px;
 
+					@media (max-width: 731px) {
+						margin-bottom: 20px;
+					}
+
 					@media (max-width: 500px) {
 						margin-top: calc((100vw - 139px + 50px) / 2);
 					}
@@ -212,6 +216,7 @@
 	}
 
 	@media (max-width: 1170px) {
+		padding: 66px 0 60px;
 		height: auto;
 	}
 }
